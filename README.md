@@ -1,60 +1,18 @@
-# 🎯 API CRUD FastAPI - Ejercicio Completado
-
-## 📋 Descripción
+ Descripción
 API CRUD completa implementada con FastAPI que incluye todas las operaciones básicas:
 - ✅ **CREATE** (POST) - Crear nuevos items
 - ✅ **READ** (GET) - Leer items (todos y por ID)
 - ✅ **UPDATE** (PUT) - Actualizar items existentes
 - ✅ **DELETE** (DELETE) - Eliminar items
 
-## 🚀 Cómo ejecutar
+Crear un item (POST):
+<img width="598" height="750" alt="image" src="https://github.com/user-attachments/assets/3a2e44cb-e856-43b8-bd43-63014643397e" />
 
-### 1. Instalar dependencias
-```bash
-pip install -r requirements.txt
-```
+Actualizar el item (PUT):
+<img width="521" height="701" alt="image" src="https://github.com/user-attachments/assets/126ca8df-2cd2-4889-a4b9-00544e90939c" />
 
-### 2. Ejecutar la aplicación
-```bash
-uvicorn app.main:app --reload
-```
-
-### 3. Acceder a la documentación
-Abrir en el navegador: `http://localhost:8000/docs`
-
-## 📚 Endpoints disponibles
-
-### Items
-- `GET /api/v1/items/` - Obtener todos los items
-- `GET /api/v1/items/{item_id}` - Obtener un item por ID
-- `POST /api/v1/items/` - Crear un nuevo item
-- `PUT /api/v1/items/{item_id}` - Actualizar un item por ID
-- `DELETE /api/v1/items/{item_id}` - Eliminar un item por ID
-
-### Otros endpoints
-- `GET /` - Endpoint raíz
-- `GET /health` - Verificación de salud
-
-## 🧪 Ejemplos de uso
-
-### Crear un item
-```bash
-curl -X POST "http://localhost:8000/api/v1/items/" \
-     -H "Content-Type: application/json" \
-     -d '{"name": "Laptop", "price": 999.99}'
-```
-
-### Actualizar un item
-```bash
-curl -X PUT "http://localhost:8000/api/v1/items/1" \
-     -H "Content-Type: application/json" \
-     -d '{"name": "Laptop Gaming", "price": 1299.99}'
-```
-
-### Eliminar un item
-```bash
-curl -X DELETE "http://localhost:8000/api/v1/items/1"
-```
+Eliminar el item (DELETE):
+<img width="608" height="691" alt="image" src="https://github.com/user-attachments/assets/61aaa680-a8bb-4475-868d-5b952e3d4103" />
 
 ## 📁 Estructura del proyecto
 ```
